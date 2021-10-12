@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+			<form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter city"
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+								id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+					<span id="CurrentDate">
+					<small>
+							Current Date
+					</small>
+					</span>
+					<button class="btn btn-success w-100"
+					id="current-location">Current Location</button>
+					<div class="card">
+					<div class="card">
+		<div class="card-body">
+					<div class="head">
+					<div class="row">
+							<div class="col-7">
+					<h1 id="city">
+							<strong> Guadalajara, Jal. </strong>📍
+					</h1>
+					<h2 class="degree">
+						<span id="temperature">
+							28° </span>  <span class="units" ><a href="#" id="farenheit-link">&deg;F</a>
+								|
+								<a href="#" id="celsius-link">&deg;C</a> </span>
+					</h2>
+					<h2 id="description">
+							Mostly Cloudy
+					</h2>
+					<h3>
+							13% chance of rain
+					</h3> 
+					</div>
+							<div class="col-5">
+								<h4>
+										⛅
+								</h4> 
+								<h3>--/17°</h3>
+								<h3>humidity <span id="humidity"></span>% </h3> 
+								<h3> wind <span id="wind"></span> km/h </h3>
+							</div>
+	</div>
+			</div>
+			</div>
+	</div>
+	<br/>
+	<div class="card">
+		<div class="card-body">
+	<p>
+			<strong>
+			Daily Forecast
+			</strong>
+	</p>
+	<br />
+	<span class="days">
+	<div class="row">
+			<div class="col day"> Sunday 15
+			<div class="row temperature">
+					<strong>28°</strong>
+			</div>
+			<div class="col temperature">
+					17°
+			</div>
+			<br />
+			<div class="col emoji">
+					🌧
+			</div>
+			<br />
+			</div>
+			<div class="col day">Monday 16 
+					<div class="row temperature">
+							<strong>
+									27°
+							</strong>
+					</div>
+					<div class="col temperature">
+							17°
+					</div>
+					<br />
+					<div class="col emoji">
+	🌦
+					</div>
+					<br />
+			</div>
+			<div class="col day"> Tuesday 17
+					<div class="row temperature">
+							<strong>
+									28°
+							</strong>
+					</div>
+					<div class="col temperature">
+							17°
+					</div>
+					<br />
+					<div class="col emoji">
+							🌦
+					</div>
+					<br />
+			</div>
+			<div class="col day"> Wednesday 18
+					<div class="row temperature">
+							<strong>28°</strong>
+					</div>
+					<div class="col temperature">
+							17°
+					</div>
+					<br />
+					<div class="col emoji">
+					🌧
+			</div>
+			<br />
+			</div>
+			<div class="col day"> Thursday 19
+					<div class="row temperature">
+							<strong>
+									28°
+							</strong>
+					</div>
+					<div class="col temperature">
+							17°
+					</div>
+					<br />
+					<div class="col emoji">
+					🌧
+			</div>
+			<br />
+	</div>
+	</span>
+	<br />
+	<span class="rain">
+			<div class="row">
+					<div class="col">
+							☔ 16%
+					</div>
+					<div class="col">
+							☔48%
+					</div>
+					<div class="col">
+							☔54%
+					</div>
+					<div class="col">
+							☔65%
+					</div>
+					<div class="col">
+							☔65%
+					</div>
+			</div>
+	</span>
+	 </div>
+	</div>
+			</div>  
+			<footer>
+					Coded by Gloria Sotelo
+      </footer>  
+    <script src="src/index.js"></script>
+  </body>
+</html>
